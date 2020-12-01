@@ -9,3 +9,6 @@
 * `docker run -p 49160:8080 -d linushe/mern-demo`
 * Open Files & Console in Docker Container via Remote in VSCode
 * Open http://localhost:49160/
+
+## Learning Outcomes /epress1
+* See HTTP Status via `curl http://localhost:49160`
