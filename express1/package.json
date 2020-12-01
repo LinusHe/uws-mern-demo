@@ -1,0 +1,13 @@
+{
+  "name": "docker_express",
+  "version": "1.0.0",
+  "description": "Simple express",
+  "author": "First Last <first.last@example.com>",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
