@@ -73,3 +73,7 @@ MongoDB with Backend Interface
 
 - `cd mongo1`
 - `docker-compose -f stack.yml up`
+- shutdown with `docker-compose -f stack.yml down`
+
+### UML Diagrams (for Databases)
+- Use VS Code Extension "PlantUML"

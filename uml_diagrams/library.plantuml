@@ -1,0 +1,32 @@
+@startuml demo
+class Book {
+ title : String
+ author : Author[1]
+ summary : String
+ ISBN : String
+ genre : Genre[0..*]
+ url : String
+}
+class Author {
+ first_name : String
+ family_name : String
+ date_of_birth : Date
+ name : String
+ lifespan : String
+ url : String
+}
+class BookInstance {
+ book: Book
+ imprint: String
+ status: enum
+ due_back: Date
+ url:String
+}
+class Genre {
+ name : String
+ url :String
+}
+Book "1..*" -- "1" Author
+Book "0..*" -- "0..*" Genre
+Book "1" -- "0..*" BookInstance
+@enduml
