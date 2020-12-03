@@ -1,0 +1,51 @@
+# Use root/example as user/password credentials
+# Try to start up myapp 3 as well minimum version 3.2
+version: '3.8'
+volumes:
+  dbdata:
+  dbconfig:
+
+services:
+  mongo:
+    image: mongo
+    container_name: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_DATABASE: local_library
+    volumes:
+    - type: volume
+      source: dbdata
+      target: /data/db
+    - type: volume
+      source: dbconfig
+      target: /data/configdb
+    - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+    ports:
+    - 27017:27017
+
+  myapp3:
+    image: dt/express-development
+    container_name: myapp
+    restart: always
+    ports:
+    - 3000:3000
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: example
+    volumes:
+    - type: bind
+      source: ./myapp
+      target: /usr/src/app
+    links:
+    - mongo
+
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+    - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: example

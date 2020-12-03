@@ -75,5 +75,16 @@ MongoDB with Backend Interface
 - `docker-compose -f stack.yml up`
 - shutdown with `docker-compose -f stack.yml down`
 
+
+- visit http://localhost:8081 for Mongo Express (DB Admin Tool)
+
 ### UML Diagrams (for Databases)
 - Use VS Code Extension "PlantUML"
+
+# Task 4: Using Mongoose to communicate between express and mongo
+
+### Run
+- `cd express_app3`
+- `docker build -t dt/express-development .`
+- `docker-compose -f stack.yml up`
+- stoppen mit `docker-compose -f stack.yml down`
