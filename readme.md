@@ -41,3 +41,35 @@
 - `docker run --name myapp1 -p 3000:3000 -it dt/express-development`
 - Open http://localhost:3000/
 - Open Files & Console in Docker Container via Remote in VSCode
+
+### Learning Outcomes
+- How to Setup & Run an App using Express, Nodemon & Docker
+
+# Task 3: Restful Server
+
+### Run Project:
+
+- Start Docker Desktop
+- `cd express_app2`
+- `docker build -t dt/express-rest .`
+- `docker run --name myapp2 -p 3000:3000 -it dt/express-rest`
+- Open http://localhost:3000/
+- Open Files & Console in Docker Container via Remote in VSCode
+
+### mongo Stack
+MongoDB
+- `docker pull mongo`
+
+MongoDB with Backend Interface
+- `docker pull mongo-express`
+
+
+> Run manually 
+- `docker run --name some-mongo -d mongo:tag`
+
+- `docker run --network some-network -e ME_CONFIG_MONGODB_SERVER=some-mongo -p 8081:8081 mongo-express`
+
+> Or Use Docker-Compose 
+
+- `cd mongo1`
+- `docker-compose -f stack.yml up`
