@@ -87,4 +87,29 @@ MongoDB with Backend Interface
 - `cd express_app3`
 - `docker build -t dt/express-development .`
 - `docker-compose -f stack.yml up`
-- stoppen mit `docker-compose -f stack.yml down`
+- visit http://localhost:8081 for Mongo Express (DB Admin Tool)
+- visit http://localhost:3000 for React App
+- Example Requests: http://localhost:3000/users , http://localhost:3000/catalog/authors , http://localhost:3000/catalog/book/5dc21650ae5da3ca57ebc53d 
+- stop with `docker-compose -f stack.yml down`
+
+# Task 5: Setting up Views for Express App
+
+
+
+### Run
+- `cd express_app4`
+### Cleanup from last Task
+- `docker build -t dt/express-development .`
+- `docker volume prune`
+- `docker container rm mongo`
+- `docker container rm myapp`
+
+### Run
+- `docker-compose -f stack.yml up`
+- visit http://localhost:8081 for Mongo Express (DB Admin Tool)
+- visit http://localhost:3000 for React App
+- stop with `docker-compose -f stack.yml down`
+
+### Learning Outcomes
+- Standard String of the connection string: `mongodb://[username:password@]host1[:port1][,...hostN[:portN]][/[database][?o
+ptions]]`
