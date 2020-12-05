@@ -94,15 +94,11 @@ MongoDB with Backend Interface
 
 # Task 5: Setting up Views for Express App
 
-
-
 ### Run
 - `cd express_app4`
 ### Cleanup from last Task
 - `docker build -t dt/express-development .`
 - `docker volume prune`
-- `docker container rm mongo`
-- `docker container rm myapp`
 
 ### Run
 - `docker-compose -f stack.yml up`
@@ -113,3 +109,4 @@ MongoDB with Backend Interface
 ### Learning Outcomes
 - Standard String of the connection string: `mongodb://[username:password@]host1[:port1][,...hostN[:portN]][/[database][?o
 ptions]]`
+- Created Lists of mongoDB Content with pug templates
