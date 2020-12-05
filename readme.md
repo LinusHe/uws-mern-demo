@@ -107,6 +107,10 @@ MongoDB with Backend Interface
 - stop with `docker-compose -f stack.yml down`
 
 ### Learning Outcomes
-- Standard String of the connection string: `mongodb://[username:password@]host1[:port1][,...hostN[:portN]][/[database][?o
+- How to create a normalized DB in MongoDB
+- Connect View with DB via `mongodb://[username:password@]host1[:port1][,...hostN[:portN]][/[database][?o
 ptions]]`
 - Created Lists of mongoDB Content with pug templates
+
+# Task 6: Database Interactions in Express
+> Including Create, Retrieve, Edit & Delete
