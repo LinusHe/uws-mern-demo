@@ -94,13 +94,12 @@ MongoDB with Backend Interface
 
 # Task 5: Setting up Views for Express App
 
-### Run
-- `cd express_app4`
 ### Cleanup from last Task
 - `docker build -t dt/express-development .`
 - `docker volume prune`
 
 ### Run
+- `cd express_app4`
 - `docker-compose -f stack.yml up`
 - visit http://localhost:8081 for Mongo Express (DB Admin Tool)
 - visit http://localhost:3000 for React App
@@ -114,3 +113,9 @@ ptions]]`
 
 # Task 6: Database Interactions in Express
 > Including Create, Retrieve, Edit & Delete
+
+### Cleanup from last Task
+- `docker build -t dt/express-development .`
+- `docker volume prune`
+### Run
+- `cd express_app5`
