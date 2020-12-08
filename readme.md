@@ -8,6 +8,8 @@
 
 # Task 1: Plain Express
 
+> PDF: [Labsheet 1](https://github.com/LinusHe/uws-mern-demo/blob/master/labsheets/nodeexpress1.pdf)
+
 ### Run Project:
 
 - Start Docker Desktop
@@ -22,6 +24,8 @@
 - See HTTP Status via `curl http://localhost:49160`
 
 # Task 2a: Express Application Files
+
+> PDF: [Labsheet 2](https://github.com/LinusHe/uws-mern-demo/blob/master/labsheets/nodeexpress2.pdf)
 
 ### Run Project:
 
@@ -50,6 +54,8 @@
 - How to Setup & Run an App using Express, Nodemon & Docker
 
 # Task 3: Restful Server
+
+> PDF: [Labsheet 3](https://github.com/LinusHe/uws-mern-demo/blob/master/labsheets/nodeexpress3.pdf)
 
 ### Run Project:
 
@@ -87,6 +93,8 @@ MongoDB with Backend Interface
 
 # Task 4: Using Mongoose to communicate between express and mongo
 
+> PDF: [Labsheet 4](https://github.com/LinusHe/uws-mern-demo/blob/master/labsheets/nodeexpress4.pdf)
+
 ### Run
 - `cd express_app3`
 - `docker build -t dt/express-development .`
@@ -97,6 +105,8 @@ MongoDB with Backend Interface
 - stop with `docker-compose -f stack.yml down`
 
 # Task 5: Setting up Views for Express App
+
+> PDF: [Labsheet 5](https://github.com/LinusHe/uws-mern-demo/blob/master/labsheets/nodeexpress5.pdf)
 
 ### Cleanup from last Task
 - `docker build -t dt/express-development .`
@@ -116,6 +126,9 @@ ptions]]`
 - Created Lists of mongoDB Content with pug templates
 
 # Task 6: Database Interactions in Express
+
+> PDF: [Labsheet 6](https://github.com/LinusHe/uws-mern-demo/blob/master/labsheets/nodeexpress6.pdf)
+
 > Including Create, Retrieve, Edit & Delete
 
 ### Cleanup from last Task
