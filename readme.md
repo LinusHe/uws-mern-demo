@@ -125,4 +125,4 @@ ptions]]`
 - stop with `docker-compose -f stack.yml down`
 
 ### Learning Outcomes
-- Create Detail Views: http://localhost:3000/catalog/genre/5dd32a734a04a9aecd2829b1
+- Create Detail Views (Genre, Book, Author, Instance): e.g. http://localhost:3000/catalog/genre/5dd32a734a04a9aecd2829b1
