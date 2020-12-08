@@ -126,3 +126,4 @@ ptions]]`
 
 ### Learning Outcomes
 - Create Detail Views (Genre, Book, Author, Instance): e.g. http://localhost:3000/catalog/genre/5dd32a734a04a9aecd2829b1
+- Create Forms (new Genres, Authors, Books, Instances): e.g. http://localhost:3000/catalog/genre/create
