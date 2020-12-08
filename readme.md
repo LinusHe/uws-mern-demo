@@ -119,3 +119,10 @@ ptions]]`
 - `docker volume prune`
 ### Run
 - `cd express_app5`
+- `docker-compose -f stack.yml up`
+- visit http://localhost:8081 for Mongo Express (DB Admin Tool)
+- visit http://localhost:3000 for React App
+- stop with `docker-compose -f stack.yml down`
+
+### Learning Outcomes
+- Create Detail Views: http://localhost:3000/catalog/genre/5dd32a734a04a9aecd2829b1
