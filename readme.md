@@ -1,6 +1,10 @@
 # **Labwork** MongoDB, Express, React, NodeJS
 
-> UWS 2020 - Internet Technologies
+> Labsheets by Derek Turner
+
+> © UWS 2020 - Internet Technologies
+
+> Based on: https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs
 
 # Task 1: Plain Express
 
